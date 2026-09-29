@@ -1,1 +1,11 @@
+# Carpetas de compilación generadas por CLion / CMake
+cmake-build-*/
+build/
+
 .idea/
+
+# Binarios y ejecutables
+*.exe
+*.o
+*.obj
+*.out
