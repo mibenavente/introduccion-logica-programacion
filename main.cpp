@@ -5,7 +5,6 @@
 using namespace std;
 
 vector<int> extraerDigitos(int numero) {
-    // Si el número es negativo, se trabaja con su valor absoluto
     if (numero < 0) numero = -numero;
 
     string texto = to_string(numero);
