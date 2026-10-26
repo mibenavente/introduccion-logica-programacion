@@ -216,3 +216,21 @@ inline int estructurasAnidadas01() {
 
     return 0;
 }
+
+inline void rangoEdad() {
+    int edad;
+    cout << "Por favor, ingresa tu edad: ";
+    cin >> edad;
+    if (edad < 18) {
+        if (edad < 13) {
+            cout << "\nEres un/a **Niño/a**." << endl;
+            cout << "Tu edad es menor a 13 años." << endl;
+        } else {
+            cout << "\nEres un/a **Adolescente**." << endl;
+            cout << "Tu edad está entre 13 y 17 años." << endl;
+        }
+    } else {
+        cout << "\nEres un/a **Adulto/a**." << endl;
+        cout << "Tu edad es 18 años o más." << endl;
+    }
+}
