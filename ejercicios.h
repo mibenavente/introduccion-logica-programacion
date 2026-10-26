@@ -302,3 +302,32 @@ inline int positivoNegativoONeutro()
     }
     return 0;
 }
+
+inline int esCapicua4Digitos() {
+    int num;
+
+    cout << "Ingrese un número entero de 4 dígitos: ";
+    cin >> num;
+
+    // Manejo de signo
+    int numAbs = (num < 0) ? -num : num;
+
+    // Validación de 4 dígitos
+    if (numAbs >= 1000 && numAbs <= 9999) {
+        int d1 = numAbs / 1000;
+        int d2 = (numAbs / 100) % 10;
+        int d3 = (numAbs / 10) % 10;
+        int d4 = numAbs % 10;
+
+        if (d1 == d4 && d2 == d3) {
+            cout << "El número " << num << " ES capicúa." << endl;
+        } else {
+            cout << "El número " << num << " NO es capicúa." << endl;
+        }
+    } else {
+        cout << "Error: El número no tiene 4 dígitos." << endl;
+    }
+
+    return 0;
+}
+
