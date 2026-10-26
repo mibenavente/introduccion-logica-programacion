@@ -258,3 +258,10 @@ inline int esMayorQue10() {
     else cout << "Ninguno de los números es mayor que 10";
     return 0;
 }
+
+inline int elMayorDe3Numeros() {
+    int a = 101, b = 50, c = 26, g;
+    g = (a > b && a > c) ? a : ((b > a && b > c) ? b : c);
+    cout << "El número mayor es " << g;
+    return 0;
+}
