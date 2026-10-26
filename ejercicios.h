@@ -1,48 +1,35 @@
-
-// Creado por Miguel
-
-#ifndef IACD_INTRODUCCION_LOGICA_PROGRAMACION_EJERCICIOS_H
-#define IACD_INTRODUCCION_LOGICA_PROGRAMACION_EJERCICIOS_H
-
+#pragma once
 #include <iostream>
+
 using namespace std;
 
-class ejercicios {
-    int static Ejercicio1()
-    {
-        for (int i = 1; i <= 5; i++)
-        {
-            for (int j = 1; j <= 5; j++)
-            {
-                if (i == j || i + j == 6 || i == 1 || i == 5 || j == 3)
-                {
-                    cout << "*";
-                }
-                else
-                {
-                    cout << " ";
-                }
-            }
-            cout << endl;
-        }
-        return 0;
+inline void sumatoria_fracciones_signos_variados() {
+    int n;
+    double x;
+
+    cout << "Ingrese el valor de X: ";
+    cin >> x;
+    cout << "Ingrese la cantidad de terminos (N): ";
+    cin >> n;
+
+    double resultado = 0.0; 
+    int signo = 1;   
+    
+    for (int i = 1; i <= n; i++) {
+        
+        int coef = (i + 1) / 2;             
+        int deno = coef * i;                   
+        int potencia = pow(x, i);     
+        
+        double termino = signo * ((coef * potencia) / deno);
+
+        resultado += termino;
+
+        cout << "Termino " << i << ": " << termino << endl;
+
+        signo *= -1;
     }
-
-    int Ejercicio2() {
-        for (int i = 1; i <= 8; i++) {
-            for (int j = 1; j <= 8; j++) {
-                if ((i + j) % 2 == 0) {
-                    cout << "* ";
-                } else {
-                    cout << "  ";
-                }
-            }
-            cout << endl;
-        }
-
-        return 0;
-    }
-};
-
-
-#endif //IACD_INTRODUCCION_LOGICA_PROGRAMACION_EJERCICIOS_H
+    
+    cout << fixed << setprecision(4); 
+    cout << "\nEl resultado de la sumatoria es: " << resultado << endl;
+}
