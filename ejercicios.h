@@ -234,3 +234,11 @@ inline void rangoEdad() {
         cout << "Tu edad es 18 años o más." << endl;
     }
 }
+
+inline int disyuncionYConjuncion() {
+    bool p, q;
+    cin >> p >> q;
+    cout << (p and q) << endl;
+    cout << (p or q);
+    return 0;
+}
