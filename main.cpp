@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    sumatoriaImpares();
+    aproximacionPiConBandera();
     return 0;
 }
