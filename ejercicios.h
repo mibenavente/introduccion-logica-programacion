@@ -187,6 +187,7 @@ inline void sumatoriaImpares() {
         for (int i = 1; i <= n; i++) {
             int exponente = (2 * i) - 1;
             int denominador = 2 * i;
+
             double termino = pow(x, exponente) / denominador;
 
             if (i % 2 != 0) {

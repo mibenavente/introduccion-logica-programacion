@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    sumatoria_fracciones_signos_variados();
+    sumatoriaImpares();
     return 0;
 }
