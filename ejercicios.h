@@ -331,3 +331,31 @@ inline int esCapicua4Digitos() {
     return 0;
 }
 
+inline int sumaDeFraccionesConBandera() {
+    double sumaTotal = 0.0;
+    double numerador = 0.0;
+    double denominador = 6.0;
+    bool esTurnoDeSumar = true;
+
+    for (int i = 1; i <= 5; i++) {
+        numerador = numerador + 1.0;
+        denominador = denominador - 1.0;
+
+        double terminoActual = numerador / denominador;
+
+        if (esTurnoDeSumar) {
+            sumaTotal = sumaTotal + terminoActual;
+            esTurnoDeSumar = false;
+        } else {
+            sumaTotal = sumaTotal - terminoActual;
+            esTurnoDeSumar = true;
+        }
+
+        cout << " termino " << i << " (" << numerador << "/" << denominador
+             << ") suma parcial: " << sumaTotal << endl;
+    }
+
+    cout << "El resultado es: " << sumaTotal << endl;
+    return 0;
+}
+
