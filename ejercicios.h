@@ -308,11 +308,7 @@ inline int esCapicua4Digitos() {
 
     cout << "Ingrese un número entero de 4 dígitos: ";
     cin >> num;
-
-    // Manejo de signo
     int numAbs = (num < 0) ? -num : num;
-
-    // Validación de 4 dígitos
     if (numAbs >= 1000 && numAbs <= 9999) {
         int d1 = numAbs / 1000;
         int d2 = (numAbs / 100) % 10;
@@ -415,3 +411,4 @@ inline int miSumaDeFracciones77ConBandera() {
 
     return 0;
 }
+
