@@ -199,3 +199,20 @@ inline void sumatoriaImpares() {
         cout << fixed << setprecision(5) << resultado << "\n";
     }
 }
+
+inline int estructurasAnidadas01() {
+    int num;
+    cin >> num;
+
+    if (num < 10) {
+        if (num == 1) {
+            cout << "El Valor es " << num;
+        } else {
+            cout << "El Valor es mayor a 1";
+        }
+    } else {
+        cout << "El Valor es mayor que 10";
+    }
+
+    return 0;
+}
