@@ -265,3 +265,10 @@ inline int elMayorDe3Numeros() {
     cout << "El número mayor es " << g;
     return 0;
 }
+
+inline int cualEsParOImpar() {
+    int numero = 10;
+    string resultado = (numero % 2 == 0) ? "par" : "impar";
+    cout << "El número es " << resultado << endl;
+    return 0;
+}
