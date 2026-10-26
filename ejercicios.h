@@ -379,3 +379,39 @@ inline int forAnidado()
     return 0;
 }
 
+inline int miSumaDeFracciones77ConBandera() {
+    double x;
+    int n;
+
+    cout << "Ingrese el valor de X: ";
+    cin >> x;
+    cout << "Ingrese la cantidad de terminos (N): ";
+    cin >> n;
+
+    if (n > 0) {
+        double sx = 0.0;
+        bool esTurnoDeSumar = true; // Bandera
+
+        for (int i = 1; i <= n; i++) {
+            int coef = (i + 1) / 2;
+            int deno = coef * i;
+            double potencia = pow(x, i);
+            double termino = (coef * potencia) / deno;
+
+            if (esTurnoDeSumar) {
+                sx = sx + termino;
+                esTurnoDeSumar = false;
+            } else {
+                sx = sx - termino;
+                esTurnoDeSumar = true;
+            }
+        }
+
+        cout << fixed << setprecision(4);
+        cout << "El resultado de SX es: " << sx << endl;
+    } else {
+        cout << "N debe ser mayor a 0." << endl;
+    }
+
+    return 0;
+}
