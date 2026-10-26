@@ -412,3 +412,35 @@ inline int miSumaDeFracciones77ConBandera() {
     return 0;
 }
 
+inline void aproximacionPiConBandera() {
+    int n;
+    cout << "APROXIMACION DE PI (SERIE DE LEIBNIZ) \n";
+    cout << "Ingrese la cantidad de terminos (N): ";
+    cin >> n;
+
+    if (n > 0) {
+        double sumaSerie = 0.0;
+        bool esTurnoDeSumar = true; // Bandera
+
+        for (int i = 1; i <= n; i++) {
+            double denominador = 2.0 * i - 1.0;
+            double termino = 1.0 / denominador;
+
+            if (esTurnoDeSumar) {
+                sumaSerie += termino;
+                esTurnoDeSumar = false;
+            } else {
+                sumaSerie -= termino;
+                esTurnoDeSumar = true;
+            }
+        }
+
+        double piAproximado = 4.0 * sumaSerie;
+
+        cout << fixed << setprecision(5);
+        cout << "\nSuma interna calculada: " << sumaSerie << "\n";
+        cout << "Valor aproximado de PI : " << piAproximado << "\n";
+    } else {
+        cout << "Error: Ingrese cant de numeros valido, debe ser mayor a 0.\n";
+    }
+}
