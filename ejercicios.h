@@ -250,3 +250,11 @@ inline int boolAproboYEntregoProyecto() {
     }
     return 0;
 }
+
+inline int esMayorQue10() {
+    int a = 20;
+    int b = 5;
+    if (a > 10 || b > 10) cout << "Al menos uno de los números es mayor que 10";
+    else cout << "Ninguno de los números es mayor que 10";
+    return 0;
+}
