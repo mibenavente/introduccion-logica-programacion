@@ -272,3 +272,19 @@ inline int cualEsParOImpar() {
     cout << "El número es " << resultado << endl;
     return 0;
 }
+
+inline int usandoSwitch() {
+    int clave, numero;
+    cin>>clave>>numero; 
+    switch(clave){
+        case 12: cout<<(numero * 2)<<endl; break;             
+        case 15: cout<<(numero * 2.2)<<endl; break;             
+        case 18: cout<<(numero * 4.5)<<endl; break;             
+        case 19: cout<<(numero * 3.5)<<endl; break;             
+        case 23: cout<<(numero * 6)<<endl;  break;             
+        case 25: cout<<(numero * 6)<<endl;  break;                        
+        case 29: cout<<(numero * 5)<<endl;  break; 
+        default: cout<<"Vuelva a intentarlo."<<endl; 
+    } 
+    return 0; 
+}
