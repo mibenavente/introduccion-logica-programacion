@@ -37,7 +37,7 @@ inline void sumatoria_fracciones_signos_variados() {
     cout << "\nEl resultado de la sumatoria es: " << resultado << endl;
 }
 
-vector<int> extraerDigitos(int numero) {
+inline vector<int> extraerDigitos(int numero) {
     if (numero < 0) numero = -numero;
 
     string texto = to_string(numero);
