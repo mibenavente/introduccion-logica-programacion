@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    aprendiendoArrays();
+    declaracionPorReferencia();
     return 0;
 }

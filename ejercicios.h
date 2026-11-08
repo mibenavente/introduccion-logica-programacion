@@ -521,3 +521,13 @@ inline void estructuras() {
         string telefono;
     };
 }
+
+void modificarNumero(int& numero) {
+    numero = 777;
+};
+
+inline void declaracionPorReferencia() {
+    int original = 11;
+    modificarNumero(original);
+    cout << original << endl;
+}
