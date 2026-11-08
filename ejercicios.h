@@ -495,3 +495,8 @@ inline void menuConSwitch() {
 
     } while (opcion != 4);
 }
+
+inline void aprendiendoArrays() {
+    string frutas[3] = { "Manzana roja", "Banana", "Naranja" };
+    cout << frutas[0] << endl;
+}

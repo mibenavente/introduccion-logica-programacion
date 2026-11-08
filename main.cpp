@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    menuConSwitch();
+    aprendiendoArrays();
     return 0;
 }
