@@ -500,3 +500,24 @@ inline void aprendiendoArrays() {
     string frutas[3] = { "Manzana roja", "Banana", "Naranja" };
     cout << frutas[0] << endl;
 }
+
+inline void estructuras() {
+    struct Estudiante {
+    public:
+        string nombre;
+        int edad;
+        int ciclo;
+    private:
+        string correo;
+        int carreraId;
+    };
+
+    class Docente {
+    public:
+        string nombre;
+        int edad;
+    private:
+        string correo;
+        string telefono;
+    };
+}
