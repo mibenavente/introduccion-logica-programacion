@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    aproximacionPiConBandera();
+    menuConSwitch();
     return 0;
 }

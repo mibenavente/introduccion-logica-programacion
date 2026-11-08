@@ -444,3 +444,41 @@ inline void aproximacionPiConBandera() {
         cout << "Error: Ingrese cant de numeros valido, debe ser mayor a 0.\n";
     }
 }
+
+// Fecha: 2026 10 28
+inline void menuConSwitch() {
+    int opcion;
+
+    do {
+        cout << "========== Menú ==========" << endl;
+        for (int i = 1; i <= 3; i++) {
+            cout << i << " opción." << endl;
+        }
+        cout << "4. Salir" << endl;
+        cout << "==========================" << endl;
+
+        cout << "Selecciona una opción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                cout << "Has seleccionado la opción 1." << endl;
+                break;
+            case 2:
+                cout << "Has seleccionado la opción 2." << endl;
+                break;
+            case 3:
+                cout << "Has seleccionado la opción 3." << endl;
+                break;
+            case 4:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cout << "Opción no válida. Por favor, selecciona una opción válida." << endl;
+                break;
+        }
+
+        cout << endl;
+
+    } while (opcion <=4);
+}
