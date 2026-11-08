@@ -445,6 +445,8 @@ inline void aproximacionPiConBandera() {
     }
 }
 
+
+// UNIDAD II - Unidad 2
 // Fecha: 2026 10 28
 inline void menuConSwitch() {
     int opcion;
@@ -480,5 +482,5 @@ inline void menuConSwitch() {
 
         cout << endl;
 
-    } while (opcion <=4);
+    } while (opcion != 4);
 }
