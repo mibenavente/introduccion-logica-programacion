@@ -462,6 +462,17 @@ inline void menuConSwitch() {
         cout << "Selecciona una opción: ";
         cin >> opcion;
 
+        // Verificacion de que no ingrese algun texto
+        if (cin.fail()) {
+            cout << "\n[Error] Por favor, ingresa un número válido, no letras.\n\n";
+
+            cin.clear(); // quita el error
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Limpia el búfer
+
+            opcion = 0;
+            continue;
+        }
+
         switch (opcion) {
             case 1:
                 cout << "Has seleccionado la opción 1." << endl;
